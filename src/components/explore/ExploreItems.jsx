@@ -81,7 +81,7 @@ const ExploreItems = () => {
                 </div>
                 <Countdown info={exploreNFT}></Countdown>
                 <div className="nft__item_wrap">
-                  <Link to={`/item-details/${exploreNFT.id}`}>
+                  <Link to={`/item-details/${exploreNFT.nftId}`}>
                     <img
                       src={exploreNFT.nftImage}
                       className="lazy nft__item_preview"
@@ -90,7 +90,7 @@ const ExploreItems = () => {
                   </Link>
                 </div>
                 <div className="nft__item_info">
-                  <Link to={`/item-details/${exploreNFT.id}`}>
+                  <Link to={`/item-details/${exploreNFT.nftId}`}>
                     <h4>{exploreNFT.title}</h4>
                   </Link>
                   <div className="nft__item_price">{exploreNFT.price} ETH</div>
